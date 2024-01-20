@@ -1,0 +1,168 @@
+/*-------------------------------  Start Global Rules ------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 40px;
+}
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+}
+/*-------------------------------  End Global Rules ------------------------------- */
+#home {
+  background: linear-gradient(to right, #c71b219b, #c71b219b),
+    url(../images/events-heavenly-header.jpg);
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home h1 {
+  font-size: 4rem;
+}
+#home span {
+  font-size: 1.3rem;
+}
+#box {
+  position: absolute;
+}
+#inner-box {
+  width: 0%;
+  overflow: hidden;
+}
+#side-box {
+  background-color: #111111;
+  color: #fff;
+  height: 100vh;
+  line-height: 3rem;
+}
+#box #close {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+#side-box ul {
+  /* padding-right: 100px; */
+  padding-top: 80px;
+}
+#side-box a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+#open {
+  margin-left: 10px;
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+}
+#duration {
+  background-color: #e68285;
+}
+#duration .dur {
+  cursor: pointer;
+}
+#duration .dur h4 {
+  font-size: 1.7rem;
+  color: #fff;
+  padding-block: 15px;
+  margin: 0;
+}
+h4 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#duration .dur p {
+  background-color: #cccccc;
+  color: #111111;
+  padding: 10px;
+}
+#two p,
+#three p,
+#four p {
+  display: none;
+}
+#details {
+  background: linear-gradient(to right, #c71b219b, #c71b219b),
+    url(../images/invitation-2508607__340.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 50px;
+}
+#details .cont {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+#details .row{
+  padding-block: 80px;
+}
+#hours,
+#min,
+#sec,
+#day {
+  border: solid #fff 2px;
+  padding: 20px 50px;
+}
+#contact{
+  padding-block: 80px;
+}
+#contact .icon li{
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+}
+#contact .icon li:hover{
+  color: #fff;
+  background-color: #D62E33;
+  border-color: #fff;
+}
+button{
+  background-color: #D62E33;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  border-color: #D62E33;
+  outline: none;
+}
+/*?----------------------------------- Media Queries ---------------------------------*/
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html{
+    font-size: 10px;
+  }
+}
